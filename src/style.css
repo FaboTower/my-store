@@ -1,2 +1,19 @@
 @import "tailwindcss";
-@plugin "daisyui";
+
+/* Enable DaisyUI with built-in themes only (no inline objects here) */
+@plugin "daisyui" {
+  themes: light, dark, pastel, aqua, acid;
+  logs: false;
+}
+/*
+ :root[data-theme]{
+  --color-secondary: yellow;
+  --color-secondary-content: green;
+}
+*/
+
+
+:root {
+  --color-secondary: #BDE3C3;
+  --color-secondary-content: #0b1220;
+} 
